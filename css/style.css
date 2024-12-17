@@ -660,17 +660,18 @@ a:focus {
 }
 
 .order_section .form-control {
+  color: #ffffff;
   background-color: rgba(87, 87, 87, 0.3); /* Warna putih transparan */
-  border: 3px solid #ffffff; /* Outline berwarna biru */
+  border: 1.5px solid #ffffff; /* Outline berwarna biru */
   padding: 20px; /* Jarak di dalam form */
   margin: 0 auto; /* Pusatkan form */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opsional: Tambahkan bayangan */
 }
 
-textarea::placeholder {
+.form-control ::placeholder{
   color: #ffffff; /* Warna placeholder (misalnya, oranye) */
   font-style: italic; /* Opsional: Gaya huruf miring */
-  opacity: 1; /* Pastikan placeholder terlihat sepenuhnya */
+  opacity: 0; /* Pastikan placeholder terlihat sepenuhnya */
 }
 
 
@@ -678,6 +679,15 @@ textarea::placeholder {
 
 
 /* About Us Page CSS */
+
+.about_us_section {
+  background-image: url(../images/tshirt_bg_fix.png);
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+
+
 .about_us_hero_area {
   height: 100vh;
   display: -webkit-box;
@@ -698,4 +708,13 @@ textarea::placeholder {
 
 .about_us_hero_area.sub_pages {
   height: auto;
+}
+
+.about_us_section .card-information {
+  background-color: rgba(87, 87, 87, 0.3); /* Warna putih transparan */
+  border: 1.5px solid #ffffff; /* Outline berwarna biru */
+  padding: 20px; /* Jarak di dalam form */
+  margin: 0 auto; /* Pusatkan form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100px;
 }
